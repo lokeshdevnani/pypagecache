@@ -2,8 +2,9 @@ import math
 import os
 from dataclasses import dataclass
 from mmap import PAGESIZE
+from typing import List, Optional
 
-from pypagecache.syscallwrapperutils import SyscallWrapperUtils
+from .syscallwrapperutils import SyscallWrapperUtils
 
 
 @dataclass
@@ -30,7 +31,7 @@ class PyPageCacheStats:
         return PyPageCacheStats(0, pagesize, 0)
 
     @staticmethod
-    def combine(stats_list: list['PyPageCacheStats']) -> 'PyPageCacheStats' | None:
+    def combine(stats_list: List['PyPageCacheStats']) -> Optional['PyPageCacheStats']:
         if len(stats_list) == 0:
             return None
 

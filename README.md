@@ -1,5 +1,9 @@
 # PyPageCache
 
+[![PyPI Version](https://img.shields.io/pypi/v/pypagecache.svg)](https://pypi.org/project/pypagecache/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
 ## Introduction
 
 Welcome to PyPageCache, a tool designed to help you manage and understand disk page caching in your Python applications. 
