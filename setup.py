@@ -6,7 +6,7 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='pypagecache',
-    version='0.3.3',
+    version='0.5.0',
     packages=['pypagecache'],
     install_requires=[],
     long_description=long_description,
